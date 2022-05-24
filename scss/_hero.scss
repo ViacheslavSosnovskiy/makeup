@@ -1,0 +1,33 @@
+.hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-image: url("../img/hero-bg.jpg");
+    // background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url("../img/background.jpg");
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.hero__title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 767px) {
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+}
+
+.hero__text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    
+    @media screen and (min-width: 767px) {
+        font-size: 18px;
+    }
+}

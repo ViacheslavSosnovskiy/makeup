@@ -1,0 +1,17 @@
+// .icon__item {
+//     &:not(:last-child) {
+//         margin-left: 10px;
+//       }
+// }
+
+.icon__svg {
+    width: 32px;
+    height: 32px;
+    fill: $main-color;
+    transition: fill $animation;
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+}

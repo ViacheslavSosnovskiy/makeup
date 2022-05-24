@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anastasia-MAKEUP</title>
+    <!-- нормалайз -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <!-- шрифты -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- стили -->
+    <link rel="stylesheet" href="./css/index.min.css" />
+
+    <!-- Animate CSS -->
+    <!-- <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
+    /> -->
+    
+    <!-- fancybox для галереи -->
+    <link rel="stylesheet" type="text/css" href="./fancy-box/fancybox.min.css">
+</head>
+<body>
+  <include src="./partials/header.html"></include>
+    <main>
+        <include src="partials/hero.html"></include>
+        <!-- <include src="./partials/section-works.html"></include> -->
+        <section id="portfolio" class="works">
+          <div class="container">
+            <h2 class="works__title">ПОРТФОЛИО</h2>
+      
+            <div class="wrapper__gallery">
+              <ul class="works__gallery">
+                <li class="works__gallery-item">
+                  <a href="./img/portfolio/img-1.jpg" data-fancybox="gallery">
+                    <img class="works__img" src="./img/portfolio/img-1.jpg" alt="model"/>
+                  </a>
+                </li>
+      
+                <li class="works__gallery-item">
+                  <a href="./img/portfolio/img-2.jpg" data-fancybox="gallery">
+                    <img class="works__img" src="./img/portfolio/img-2.jpg" alt="model"/>
+                  </a>
+                </li>
+      
+                <li class="works__gallery-item">
+                  <a href="./img/portfolio/img-3.jpg" data-fancybox="gallery">
+                    <img class="works__img" src="./img/portfolio/img-3.jpg" alt="model"/>
+                  </a>
+                </li>
+      
+                <li class="works__gallery-item">
+                  <a href="./img/portfolio/img-4.jpg" data-fancybox="gallery">
+                    <img class="works__img" src="./img/portfolio/img-4.jpg" alt="model"/>
+                  </a>
+                </li>
+      
+                <li class="works__gallery-item">
+                  <a href="./img/portfolio/img-5.jpg" data-fancybox="gallery">
+                    <img class="works__img" src="./img/portfolio/img-5.jpg" alt="model"/>
+                  </a>
+                </li>
+      
+                <li class="works__gallery-item">
+                  <a href="./img/portfolio/img-6.jpg" data-fancybox="gallery">
+                    <img class="works__img" src="./img/portfolio/img-6.jpg" alt="model"/>
+                  </a>
+                </li>
+              </ul>
+            </div>
+      
+            <div class="button__wrapper">
+              <a class="button__link" href="https://www.instagram.com/kudinova_beauty/" target="_blank" rel="noreferrer noopener">
+                <span class="button__text">Все работы</span>
+              </a>
+            </div>
+        </section>
+        <include src="./partials/about.html"></include>
+        <include src="./partials/price-list.html"></include>
+      </main>
+  <include src="./partials/footer.html"></include>
+
+      <!-- JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="./fancy-box/jquery.fancybox.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
