@@ -2,9 +2,9 @@
     padding-top: 20px;
     padding-bottom: 20px;
 
-    @media screen and (mix-width: 767px) {
-        padding-top: 160px;
-        padding-bottom: 160px;
+    @media screen and (min-width: 767px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }
 
@@ -18,7 +18,15 @@
 .works__gallery {
     display: grid;
     gap: 15px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+    @media screen and (min-width: 480px) {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    @media screen and (min-width: 7680px) {
+        gap: 30px;
+    }
 }
 
 .works__gallery-item {

@@ -13,9 +13,9 @@
     position: relative;
     overflow: hidden;
 
-    &:hover {
-        box-shadow: 1px 1px 25px 10px $bg-color;
-    }
+    // &:hover {
+    //     box-shadow: 1px 1px 25px 10px $bg-color;
+    // }
 
     &:before {
         content: "";

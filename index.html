@@ -27,68 +27,183 @@
     <link rel="stylesheet" type="text/css" href="./fancy-box/fancybox.min.css">
 </head>
 <body>
-  <include src="./partials/header.html"></include>
-    <main>
-        <include src="partials/hero.html"></include>
-        <!-- <include src="./partials/section-works.html"></include> -->
-        <section id="portfolio" class="works">
-          <div class="container">
-            <h2 class="works__title">ПОРТФОЛИО</h2>
-      
-            <div class="wrapper__gallery">
-              <ul class="works__gallery">
-                <li class="works__gallery-item">
-                  <a href="./img/portfolio/img-1.jpg" data-fancybox="gallery">
-                    <img class="works__img" src="./img/portfolio/img-1.jpg" alt="model"/>
-                  </a>
-                </li>
-      
-                <li class="works__gallery-item">
-                  <a href="./img/portfolio/img-2.jpg" data-fancybox="gallery">
-                    <img class="works__img" src="./img/portfolio/img-2.jpg" alt="model"/>
-                  </a>
-                </li>
-      
-                <li class="works__gallery-item">
-                  <a href="./img/portfolio/img-3.jpg" data-fancybox="gallery">
-                    <img class="works__img" src="./img/portfolio/img-3.jpg" alt="model"/>
-                  </a>
-                </li>
-      
-                <li class="works__gallery-item">
-                  <a href="./img/portfolio/img-4.jpg" data-fancybox="gallery">
-                    <img class="works__img" src="./img/portfolio/img-4.jpg" alt="model"/>
-                  </a>
-                </li>
-      
-                <li class="works__gallery-item">
-                  <a href="./img/portfolio/img-5.jpg" data-fancybox="gallery">
-                    <img class="works__img" src="./img/portfolio/img-5.jpg" alt="model"/>
-                  </a>
-                </li>
-      
-                <li class="works__gallery-item">
-                  <a href="./img/portfolio/img-6.jpg" data-fancybox="gallery">
-                    <img class="works__img" src="./img/portfolio/img-6.jpg" alt="model"/>
-                  </a>
-                </li>
-              </ul>
-            </div>
-      
-            <div class="button__wrapper">
-              <a class="button__link" href="https://www.instagram.com/kudinova_beauty/" target="_blank" rel="noreferrer noopener">
-                <span class="button__text">Все работы</span>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <nav class="header__navigation">
+        <a class="logo" href="index.html">
+          <img class="logo-img" src="./img/portfolio/img-6.jpg"/>
+        </a>
+
+        <button 
+          type="button" 
+          class="menu-btn is-open"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-button
+          >
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-close" href="./img/sprite.svg#close"></use>
+            <use class="icon-menu" href="./img/sprite.svg#menu"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu is-open" id="mobile-menu" data-menu>
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="index.html">Главная</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#about">Контакты</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#portfolio">Портфолио</a>
+            </li class="header__item">
+            <li class="header__item">
+              <a 
+              class="header__link"
+              href="https://www.instagram.com/stories/highlights/17917451465272901/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Прайс-лист
+            </a>
+            </li class="header__item">
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- HERO -->
+    <section class="hero" style="background-image: url(img/hero-bg.jpg);">
+      <div class="container">
+        <h1 class="hero__title">СТУДИЯ ВИЗАЖА</h1>
+        <p class="hero__text">Моя задача подчеркнуть твою индивидуальность</p>
+      </div>
+    </section>
+    <!-- SECTION WORKS -->
+    <section id="portfolio" class="works">
+      <div class="container">
+        <h2 class="works__title">ПОРТФОЛИО</h2>
+  
+        <div class="wrapper__gallery">
+          <ul class="works__gallery">
+            <li class="works__gallery-item">
+              <a href="./img/portfolio/img-1.jpg" data-fancybox="gallery">
+                <img class="works__img" src="./img/portfolio/img-1.jpg" alt="model"/>
               </a>
+            </li>
+  
+            <li class="works__gallery-item">
+              <a href="./img/portfolio/img-2.jpg" data-fancybox="gallery">
+                <img class="works__img" src="./img/portfolio/img-2.jpg" alt="model"/>
+              </a>
+            </li>
+  
+            <li class="works__gallery-item">
+              <a href="./img/portfolio/img-3.jpg" data-fancybox="gallery">
+                <img class="works__img" src="./img/portfolio/img-3.jpg" alt="model"/>
+              </a>
+            </li>
+  
+            <li class="works__gallery-item">
+              <a href="./img/portfolio/img-4.jpg" data-fancybox="gallery">
+                <img class="works__img" src="./img/portfolio/img-4.jpg" alt="model"/>
+              </a>
+            </li>
+  
+            <li class="works__gallery-item">
+              <a href="./img/portfolio/img-5.jpg" data-fancybox="gallery">
+                <img class="works__img" src="./img/portfolio/img-5.jpg" alt="model"/>
+              </a>
+            </li>
+  
+            <li class="works__gallery-item">
+              <a href="./img/portfolio/img-6.jpg" data-fancybox="gallery">
+                <img class="works__img" src="./img/portfolio/img-6.jpg" alt="model"/>
+              </a>
+            </li>
+          </ul>
+
+          <div class="button__wrapper">
+            <a class="button__link" href="https://www.instagram.com/kudinova_beauty/" target="_blank" rel="noreferrer noopener">
+              <span class="button__text">Все работы</span>
+            </a>
+          </div> 
+        </div>
+    </section>
+    <!-- SECTION ABOUT -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="card middle">
+          <div class="front">
+            <img src="./img/about-me.jpg" alt="about me"/>
+          </div>
+          <div class="back">
+            <div class="back-content middle">
+              <p>Меня зовут</p>
+              <h2>Анастасия</h2>
+              <br/>
+              <p>Я стилист-визажист, создам прекрастный образ для тебя.</p>
+              <p>Работаю на дому и на выезд</p>
+              <p>г. Кривой Рог.</p>
+              <div class="card__icon">
+                <a href="https://www.instagram.com/anastasiiaa94/" target="_blank" rel="noreferrer noopener">
+                  <svg class="icon__svg">
+                   <use href="./img/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+                
+                <a href="https://www.facebook.com/profile.php?id=100034371308391" target="_blank" rel="noreferrer noopener">
+                  <svg class="icon__svg">
+                    <use href="./img/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+  
+                <a href="#" target="_blank" rel="noreferrer noopener">
+                  <svg class="icon__svg">
+                    <use href="./img/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
-        </section>
-        <include src="./partials/about.html"></include>
-        <include src="./partials/price-list.html"></include>
-      </main>
-  <include src="./partials/footer.html"></include>
+          </div>
+        </div>
+      </div>
+    </section> 
+  </main>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="card__icon">
+        <a href="https://www.instagram.com/anastasiiaa94/" target="_blank" rel="noreferrer noopener">
+          <svg class="icon__svg">
+           <use href="./img/sprite.svg#instagram"></use>
+          </svg>
+        </a>
+        
+        <a href="https://www.facebook.com/profile.php?id=100034371308391" target="_blank" rel="noreferrer noopener">
+          <svg class="icon__svg">
+            <use href="./img/sprite.svg#facebook"></use>
+          </svg>
+        </a>
+
+        <a href="#" target="_blank" rel="noreferrer noopener">
+          <svg class="icon__svg">
+            <use href="./img/sprite.svg#telegram"></use>
+          </svg>
+        </a>
+      </div>
+        <div>
+            <p>© <time datetime="2022-05-22">22 мая 2022 года</time> | Анастасия</p>
+        </div>
+    </div>
+  </footer>
 
       <!-- JS -->
+  <script src="./js/menu.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="./fancy-box/jquery.fancybox.min.js"></script>
-  <script src="./index.js"></script>
 </body>
 </html>
