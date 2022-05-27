@@ -32,7 +32,8 @@
     <div class="container">
       <nav class="header__navigation">
         <a class="logo" href="index.html">
-          <img class="logo-img" src="./img/portfolio/img-6.jpg"/>
+          <!-- <img class="logo-img" src="./img/portfolio/img-6.jpg"/> -->
+          <span>Логотип</span>
         </a>
 
         <button 
@@ -43,33 +44,54 @@
           data-menu-button
           >
           <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="icon-close" href="./img/sprite.svg#close"></use>
             <use class="icon-menu" href="./img/sprite.svg#menu"></use>
+            <use class="icon-close" href="./img/sprite.svg#close"></use>
           </svg>
         </button>
 
-        <div class="mobile-menu is-open" id="mobile-menu" data-menu>
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__link" href="index.html">Главная</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#about">Контакты</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#portfolio">Портфолио</a>
-            </li class="header__item">
-            <li class="header__item">
-              <a 
-              class="header__link"
-              href="https://www.instagram.com/stories/highlights/17917451465272901/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Прайс-лист
+        <div class="menu-container is-open" id="mobile-menu" data-menu>
+          <div>
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="index.html">Главная</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#about">Контакты</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#portfolio">Портфолио</a>
+              </li class="header__item">
+              <li class="header__item">
+                <a 
+                  class="header__link"
+                  href="https://www.instagram.com/stories/highlights/17917451465272901/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  Прайс-лист
+                </a>
+              </li class="header__item">
+            </ul>
+          </div>
+          <div class="card__icon card__header">
+            <a href="https://www.instagram.com/anastasiiaa94/" target="_blank" rel="noreferrer noopener">
+              <svg class="icon__svg">
+               <use href="./img/sprite.svg#instagram"></use>
+              </svg>
             </a>
-            </li class="header__item">
-          </ul>
+            
+            <a href="https://www.facebook.com/profile.php?id=100034371308391" target="_blank" rel="noreferrer noopener">
+              <svg class="icon__svg">
+                <use href="./img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+    
+            <a href="#" target="_blank" rel="noreferrer noopener">
+              <svg class="icon__svg">
+                <use href="./img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </nav>
     </div>
@@ -176,28 +198,9 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <div class="card__icon">
-        <a href="https://www.instagram.com/anastasiiaa94/" target="_blank" rel="noreferrer noopener">
-          <svg class="icon__svg">
-           <use href="./img/sprite.svg#instagram"></use>
-          </svg>
-        </a>
-        
-        <a href="https://www.facebook.com/profile.php?id=100034371308391" target="_blank" rel="noreferrer noopener">
-          <svg class="icon__svg">
-            <use href="./img/sprite.svg#facebook"></use>
-          </svg>
-        </a>
-
-        <a href="#" target="_blank" rel="noreferrer noopener">
-          <svg class="icon__svg">
-            <use href="./img/sprite.svg#telegram"></use>
-          </svg>
-        </a>
+      <div>
+        <p>© <time datetime="2022-05-22">22 мая 2022 года</time> | Анастасия</p>
       </div>
-        <div>
-            <p>© <time datetime="2022-05-22">22 мая 2022 года</time> | Анастасия</p>
-        </div>
     </div>
   </footer>
 
