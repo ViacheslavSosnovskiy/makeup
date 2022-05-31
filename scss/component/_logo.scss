@@ -1,4 +1,10 @@
 .logo {
   display: block;
   font-size: 30px;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    transition: $animation;
+    }
 }
