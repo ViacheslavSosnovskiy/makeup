@@ -33,12 +33,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 50px;
+  height: 40px;
 }
 
 @media screen and (min-width: 767px) {
   .header__navigation {
-    height: 70px;
+    height: 60px;
   }
 }
 
@@ -182,15 +182,15 @@
   background-color: transparent;
 }
 
-.menu-btn .icon-close {
+.menu-btn .icon-menu {
   display: none;
 }
 
-.menu-btn.is-open .icon-close {
+.menu-btn.is-open .icon-menu {
   display: block;
 }
 
-.menu-btn.is-open .icon-menu {
+.menu-btn.is-open .icon-close {
   display: none;
 }
 
