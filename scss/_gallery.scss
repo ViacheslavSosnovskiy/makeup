@@ -1,0 +1,37 @@
+.gallery {
+    outline: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.gallery__item {
+    // height: 400px;
+    // overflow: hidden;
+    text-align: center;
+    // outline: 1px solid gold;
+    flex-basis: calc(100% / 3 - 20px);
+
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+// .gallery__item * {
+//     outline: 1px solid gold;
+// }
+
+.card {
+    outline: 1px solid green;
+    overflow: hidden;
+}
+
+// .card__thumb {
+//     width: 70%;
+// }
+
+.card__content {
+    background-color: $bg-color;
+    padding: 20px;
+}
