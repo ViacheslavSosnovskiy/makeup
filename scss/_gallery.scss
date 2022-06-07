@@ -1,37 +1,51 @@
 .gallery {
-    outline: 1px solid red;
-    display: flex;
-    flex-wrap: wrap;
 
-    margin-left: -20px;
-    margin-top: -20px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+
+        margin-left: -20px;
+        margin-top: -20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: -30px;
+        margin-top: -30px;
+    }
 }
 
 .gallery__item {
-    // height: 400px;
-    // overflow: hidden;
     text-align: center;
-    // outline: 1px solid gold;
-    flex-basis: calc(100% / 3 - 20px);
 
-    margin-left: 20px;
-    margin-top: 20px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc(100% / 2 - 20px);
+
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc(100% / 3 - 30px);
+
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    & img {
+        height: 400px;
+        object-fit: cover;
+    }
 }
-
-// .gallery__item * {
-//     outline: 1px solid gold;
-// }
-
-.card {
-    outline: 1px solid green;
-    overflow: hidden;
-}
-
-// .card__thumb {
-//     width: 70%;
-// }
 
 .card__content {
     background-color: $bg-color;
     padding: 20px;
+
+    & h3 {
+        margin-bottom: 10px;
+    }
 }
