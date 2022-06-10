@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anastasia-MAKEUP</title>
+    <!-- нормалайз -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <!-- шрифты -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- стили -->
+    <link rel="stylesheet" href="../css/index.min.css" />
+    
+    <!-- fancybox для галереи -->
+    <link rel="stylesheet" type="text/css" href="../fancy-box/fancybox.min.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <nav class="header__navigation">
+          <a class="logo" href="../index.html">
+            Логотип
+          </a>
+
+        <button 
+          type="button"
+          class="menu-btn"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-button
+          >
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-close" href="../img/sprite.svg#close"></use>
+            <use class="icon-menu" href="../img/sprite.svg#menu"></use>
+          </svg>
+        </button>
+
+        <div class="menu-container" id="mobile-menu" data-menu>
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="../index.html">Главная</a>
+            </li>
+            <li class="header__item">
+              <a 
+                class="header__link"
+                data-modal-open
+              >
+                Прайс-лист
+              </a>
+            </li class="header__item">
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- SECTION WORKS -->
+    <section class="works">
+      <div class="container">
+        <h2 class="works__title">Яскравий макіяж</h2>
+  
+        <div class="wrapper__gallery">
+          <ul class="works__gallery">
+            <li class="works__gallery-item">
+              <a href="../img/bright-makeup/bright-1.jpg" data-fancybox="gallery">
+                <img class="works__img" src="../img/bright-makeup/bright-1.jpg" alt="model"/>
+              </a>
+            </li>
+  
+            <li class="works__gallery-item">
+              <a href="../img/bright-makeup/bright-2.jpg" data-fancybox="gallery">
+                <img class="works__img" src="../img/bright-makeup/bright-2.jpg" alt="model"/>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <p class="footer__text">© <time datetime="2022-05-22">2022 год</time> | Анастасия</p>
+        <!-- <time datetime="2022-05-22">22 мая 2022 год</time> -->
+      </div>
+    </div>
+  </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <a class="modal__btn" data-modal-close>
+        <svg aria-label="Переключатель мобильного меню">
+          <use class="icon-close" href="../img/sprite.svg#close"></use>
+        </svg>
+      </a>
+      <h2>Прайс-лист</h2>
+      <p>Дневной макияж - <b>350</b> грн.</p>
+      <p>Вечерний макияж - <b>450</b> грн.</p>
+      <p>Свадебный макияж - <b>600</b> грн.</p>
+      <p>Макияж для фотосессии - <b>400</b> грн.</p>
+      <br/>
+      <p>Любой выезд на дом + <b>200</b> грн.</p>
+    </div>
+  </div>
+
+      <!-- JS -->
+  <script src="../js/modal.js"></script>
+  <script src="../js/menu.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="../fancy-box/jquery.fancybox.min.js"></script>
+</body>
+</html>

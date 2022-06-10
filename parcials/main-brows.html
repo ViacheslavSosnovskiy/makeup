@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
     <!-- стили -->
-    <link rel="stylesheet" href="./css/index.min.css" />
+    <link rel="stylesheet" href="../css/index.min.css" />
 
     <!-- Animate CSS -->
     <!-- <link 
@@ -24,14 +24,14 @@
     /> -->
     
     <!-- fancybox для галереи -->
-    <link rel="stylesheet" type="text/css" href="./fancy-box/fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="../fancy-box/fancybox.min.css">
 </head>
 <body>
   <!-- HEADER -->
   <header class="header">
     <div class="container">
       <nav class="header__navigation">
-          <a class="logo" href="index.html">
+          <a class="logo" href="../index.html">
             Логотип
           </a>
 
@@ -43,15 +43,15 @@
           data-menu-button
           >
           <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="icon-close" href="./img/sprite.svg#close"></use>
-            <use class="icon-menu" href="./img/sprite.svg#menu"></use>
+            <use class="icon-close" href="../img/sprite.svg#close"></use>
+            <use class="icon-menu" href="../img/sprite.svg#menu"></use>
           </svg>
         </button>
 
         <div class="menu-container" id="mobile-menu" data-menu>
             <ul class="header__list">
               <li class="header__item">
-                <a class="header__link" href="index.html">Главная</a>
+                <a class="header__link" href="../index.html">Главная</a>
               </li>
               <li class="header__item">
                 <a 
@@ -67,50 +67,82 @@
     </div>
   </header>
   <main>
-    <!-- HERO -->
-    <section class="hero" style="background-image: url(img/hero-bg.jpg);">
-      <div class="container">
-        <div class="hero-img">
-          <img src="./img/about-me.jpg" alt="мои контакты"/>
-        </div>
-        <div>
-          <h1 class="hero__title">СТИЛИСТ-ВИЗАЖИСТ</h1>
-          <h2 class="hero__title">Анастасия Кудинова</h2>
-          <p class="hero__text">Моя задача подчеркнуть твою индивидуальность</p>
-        </div>
-      </div>
-    </section>
     <!-- SECTION WORKS -->
     <section class="works">
       <div class="container">
-        <h2 class="works__title">Мої послуги</h2>
+        <h2 class="works__title">Види макіяжу</h2>
   
         <div class="wrapper__gallery">
-          <ul class="gallery-services">
-            <li class="services__item">
+          <ul class="gallery">
+            <li class="gallery__item">
               <div class="card__thumb">
-                <img src="./img/brows/brows-1.jpg" alt="model"/>
+                <img src="../img/evening-makeup/evening-4.jpg" alt="model"/>
               </div>
 
               <div class="card__content">
-                <h3>brows</h3>
+                <h3>Вечірній макіяж</h3>
                 <div class="button__wrapper">
-                  <a class="button" href="./parcials/main-brows.html" target="_blank" rel="noreferrer noopener">
+                  <a class="button" href="./evening-works.html"  rel="noreferrer noopener">
                     <span class="button__text">Всі роботи</span>
                   </a>
                 </div>
               </div>
             </li>
             
-            <li class="services__item">
+            <li class="gallery__item">
               <div class="card__thumb">
-                <img src="./img/wedding-makeup/wedding-3.jpg" alt="model"/>
+                <img src="../img/wedding-makeup/wedding-3.jpg" alt="model"/>
               </div>
 
               <div class="card__content">
-                <h3>make-up</h3>
+                <h3>Весільний макіяж</h3>
                 <div class="button__wrapper">
-                  <a class="button" href="./parcials/mane-makeup.html" target="_blank" rel="noreferrer noopener">
+                  <a class="button" href="./wedding-works.html" rel="noreferrer noopener">
+                    <span class="button__text">Всі роботи</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="gallery__item">
+              <div class="card__thumb">
+                <img src="../img/bright-makeup/bright-1.jpg" alt="model"/>
+              </div>
+
+              <div class="card__content">
+                <h3>Яскравий макіяж</h3>
+                <div class="button__wrapper">
+                  <a class="button" href="./bright-works.html" rel="noreferrer noopener">
+                    <span class="button__text">Всі роботи</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="gallery__item">
+              <div class="card__thumb">
+                <img src="../img/hollywood-makeup/hollywood.jpg" alt="model"/>
+              </div>
+
+              <div class="card__content">
+                <h3>Голлівудський макіяж</h3>
+                <div class="button__wrapper">
+                  <a class="button" href="./hollywood-works.html" rel="noreferrer noopener">
+                    <span class="button__text">Всі роботи</span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="gallery__item">
+              <div class="card__thumb">
+                <img src="../img/thematic-makeup/thematic-1.jpg" alt="model"/>
+              </div>
+
+              <div class="card__content">
+                <h3>Тематичний макіяж</h3>
+                <div class="button__wrapper">
+                  <a class="button" href="./thematic-works.html" rel="noreferrer noopener">
                     <span class="button__text">Всі роботи</span>
                   </a>
                 </div>
@@ -119,64 +151,21 @@
           </ul>
         </div>
     </section>
-    <!-- SECTION ABOUT -->
-    <!-- <section class="about">
-      <div class="container">
-        <div class="card middle">
-          <div class="front">
-            <img src="./img/about-me.jpg" alt="мои контакты"/>
-          </div>
-          <div class="back">
-            <div class="back-content middle">
-              <p>Меня зовут</p>
-              <h2>Анастасия</h2>
-              <br/>
-              <p>Я стилист-визажист, создам прекрастный образ для тебя.</p>
-              <p>Работаю на дому и на выезд</p>
-              <p>г. Кривой Рог.</p>
-              <div class="card__icon">
-                <a href="https://www.instagram.com/anastasiiaa94/" target="_blank" rel="noreferrer noopener">
-                  <svg class="icon__svg">
-                   <use href="./img/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-                
-                <a href="https://www.facebook.com/profile.php?id=100034371308391" target="_blank" rel="noreferrer noopener">
-                  <svg class="icon__svg">
-                    <use href="./img/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-  
-                <a href="#" target="_blank" rel="noreferrer noopener">
-                  <svg class="icon__svg">
-                    <use href="./img/sprite.svg#telegram"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>  -->
   </main>
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <div class="footer__contacts">
-        <a href="tel:+380961111111">+380961111111</a>
-        <a href="https://www.instagram.com/anastasiiaa94/">Мій інстаграм</a>
-        <a href="">Мій телеграм</a>
-      </div>
-
+      <div>
         <p class="footer__text">© <time datetime="2022-05-22">2022 год</time> | Анастасия</p>
         <!-- <time datetime="2022-05-22">22 мая 2022 год</time> -->
+      </div>
     </div>
   </footer>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <a class="modal__btn" data-modal-close>
         <svg aria-label="Переключатель мобильного меню">
-          <use class="icon-close" href="./img/sprite.svg#close"></use>
+          <use class="icon-close" href="../img/sprite.svg#close"></use>
         </svg>
       </a>
       <h2>Прайс-лист</h2>
@@ -190,9 +179,9 @@
   </div>
 
       <!-- JS -->
-  <script src="./js/modal.js"></script>
-  <script src="./js/menu.js"></script>
+  <script src="../js/modal.js"></script>
+  <script src="../js/menu.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script src="./fancy-box/jquery.fancybox.min.js"></script>
+	<script src="../fancy-box/jquery.fancybox.min.js"></script>
 </body>
 </html>

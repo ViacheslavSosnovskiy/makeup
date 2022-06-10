@@ -1,0 +1,22 @@
+.gallery-services {
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.services__item {
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    
+    & img {
+        height: 400px;
+        object-fit: cover;
+    }
+}

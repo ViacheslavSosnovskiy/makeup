@@ -11,3 +11,11 @@
 .footer__text {
     font-size: 14px;
 }
+
+.footer__contacts {
+    display: block;
+
+    & a {
+        display: block;
+    }
+}
