@@ -671,6 +671,7 @@ button {
 
 .footer__contacts {
   display: block;
+  margin-bottom: 20px;
 }
 
 .footer__contacts a {
