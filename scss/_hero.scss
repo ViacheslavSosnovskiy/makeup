@@ -1,19 +1,56 @@
 .hero {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    // background-image: url("../img/hero-bg.jpg");
-    // background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url("../img/background.jpg");
     padding-top: 200px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
+    background: linear-gradient(to bottom, rgba(235, 160, 160, 0.8) 0%, rgba(236, 169, 169, 0) 100%);
 
     @media screen and (min-width: 768px) {
-        padding-top: 250px;
+        padding-top: 200px;
+    }
+}
+
+.hero__wrapper {
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+        // не центрирует почему-то
+        align-items: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.hero__wrapper--title {
+    padding: 20px;
+
+    @media screen and (min-width: 768px) {
+        padding: 40px;
+    }
+}
+
+.hero__wrapper--summary {
+    margin: 0 auto;
+
+    @media screen and (min-width: 480px) {
+      width: 300px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 500px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 800px;
     }
 }
 
 .hero-img {
+     // не центрирует почему-то
+    align-items: center;
+    
     width: 280px;
     height: 380px;
 
@@ -22,15 +59,12 @@
         height: 400px;
     }
 
-    & img{
+    & img {
         height: 100%;
     }
 }
 
 .hero__title {
-    // display: flex;
-    // justify-content: center;
-    // text-align: center;
     font-size: 50px;
     margin-bottom: 20px;
 
@@ -41,10 +75,6 @@
 }
 
 .hero__text {
-    // display: flex;
-    // justify-content: center;
-    // text-align: center;
-    
     @media screen and (min-width: 768px) {
         font-size: 24px;
     }
