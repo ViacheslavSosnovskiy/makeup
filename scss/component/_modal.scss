@@ -9,6 +9,11 @@
     border-radius: 4px; 
     padding: 10px;
 
+    // & {
+    //     background-image: url("../../img/price.jpg");
+    
+    // }
+
     @media screen and (max-width: 767px) {
 
         & p {
@@ -23,9 +28,15 @@
     }
 
     & h2 {
+        text-align: center;
         margin-bottom: 20px;
         font-size: 30px;
     }
+
+    // & h3 {
+    //     text-align: center;
+      
+    // }
 
 }
 
